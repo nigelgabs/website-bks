@@ -1,0 +1,278 @@
+// Create a user
+POST http://localhost:5006/users
+Content-Type: application/json
+
+{
+  "email": "ferdi@gmail.com",
+  "password": "12345",
+  "confPassword": "12345"
+  
+}
+
+// Get all Users
+###
+GET http://localhost:5006/users
+
+//Get Single User
+###
+GET http://localhost/5006/users
+
+// Update User
+###
+PATCH http://localhost/5006/users/5498f39f-a0ec-48ca-b738-c30e44f78ba8
+Content-Type: application/json
+
+{
+   "name": "Deni",
+  "email": "deni@gmail.com",
+  "password": "123456",
+  "confPassword": "123456",
+  "role": "user"
+}
+
+// Delete User
+###
+DELETE http://localhost:5006/users/5498f39f-a0ec-48ca-b738-c30e44f78ba8
+
+// Login Admin
+###
+POST http://localhost:5006/login
+Content-Type: application/json
+
+{
+  "email": "bks@gmail.com",
+  "password": "123456"
+}
+
+//Login User
+###
+POST http://localhost:5006/login
+Content-Type: application/json
+
+{
+  "email": "keli@gmail.com",
+  "password": "123456"
+}
+
+// Get Me
+###
+GET http://localhost:5006/me
+
+// Logout
+###
+DELETE http://localhost:5006/logout
+
+// Get all product
+###
+GET http://localhost:5006/products
+
+// Get single product
+###
+GET http://localhost:5006/products/7266b6de-3616-4792-848e-eeed37446413
+
+// Create data product
+###
+POST http://localhost:5006/products
+Content-Type: application/json
+
+{
+  "name": "produk 8",
+  "price": 997
+}
+
+// Update Product
+###
+PATCH http://localhost:5006/products/a43dbcac-d415-4c57-8ad1-581546a6f39c
+Content-Type: application/json
+
+{
+  "name": "produk 9",
+  "price": 1010
+}
+
+// Delete product
+###
+DELETE http://localhost:5006/products/8c9167b7-5a1b-4f05-acc7-104eef4cfe62
+
+//GET All Data Mou
+###
+GET http://localhost:5006/mou
+
+//Get single data Mou
+###
+GET http://localhost:5006/mou/eb7798ee-5b8c-4a6a-b436-5a116c787f45
+
+
+//Create MoU
+###
+POST http://localhost:5006/mou
+Content-Type: application/json
+
+{
+  "no_mou": 2131324,
+  "tentang": "Kerjasama",
+  "mitra": "PLN EPI",
+  "keterangan": "Hello",
+  "file": "Bks.pdf"
+}
+
+//Update Data MoU
+###
+PATCH http://localhost:5006/mou/9db923ea-6672-47f6-b3ff-eadd9a8dd804
+Content-Type: application/json
+
+{
+  "no_mou": 2131324,
+  "tentang": "Kerjasama 2",
+  "mitra": "PLN EPI",
+  "keterangan": "HelloALL",
+  "file": "Bks.pdf"
+}
+
+
+//Delete MoU
+###
+DELETE http://localhost:5006/mou/d0c478ad-22c3-4901-a9f5-4ceb11eabe59
+
+//GET All Data Pks
+###
+GET http://localhost:5006/pks
+
+//Get single data PKS
+###
+GET http://localhost:5006/pks/8929d248-d125-47ee-b9ce-3f12713a8f5e
+
+
+//Create Pks
+###
+POST http://localhost:5006/pks
+Content-Type: application/json
+
+{
+  "no_mou": 2131324,
+  "no_pks": 3242423,
+  "tentang": "Kerjasama",
+  "mitra": "PLN EPI",
+  "keterangan": "Hello",
+  "file": "Bks.pdf"
+}
+
+//Update Data PKs
+###
+PATCH http://localhost:5006/pks
+Content-Type: application/json
+
+{
+  "no_mou": 2131324,
+  "no_pks": 1314234,
+  "tentang": "Kerjasama 2",
+  "mitra": "PLN EPI",
+  "keterangan": "HelloALL",
+  "file": "Bks.pdf"
+}
+
+
+//Delete Pks
+###
+DELETE http://localhost:5006/pks/01df17b1-95a3-48f4-b3eb-26a981a4712b
+
+//GET All Data Laporan Mou
+###
+GET http://localhost:5006/laporanmou
+
+//Get single data Laporan Mou
+###
+GET http://localhost:5006/laporanmou
+
+
+//Create Laporan Mou
+###
+POST http://localhost:5006/laporanmou
+Content-Type: application/json
+
+{
+  "no_mou": 2131324,
+  "tentang": "Kerjasama",
+  "pic": "PLN EPI",
+  "no_telp": "0832343535",
+  "email": "pln@gmail.com",
+  "Keterangan": "Good Night",
+  "file": "Bks.pdf"
+}
+
+//Update Laporan Mou
+###
+PATCH http://localhost:5006/laporanmou
+Content-Type: application/json
+
+{
+  "no_mou": 2131324,
+  "no_pks": 1314234,
+  "tentang": "Kerjasama 2",
+  "mitra": "PLN EPI",
+  "keterangan": "HelloALL",
+  "file": "Bks.pdf"
+}
+
+
+//Delete Laporan Mou
+###
+DELETE http://localhost:5006/laporanmou
+
+//Create Message
+###
+POST http://localhost:5006/message
+Content-Type: application/json
+
+{
+  "Name": "Noir",
+  "email": "noir@gmail.com",
+  "Message": "hello"
+  }
+
+//Get Message
+###
+GET http://localhost:5006/message
+
+//GET All Data Laporan Pks
+###
+GET http://localhost:5006/laporanpks
+
+//Get single data Laporan Pks
+###
+GET http://localhost:5006/laporanpks
+
+
+//Create Laporan Pks
+###
+POST http://localhost:5006/laporanpks
+Content-Type: application/json
+
+{
+  "no_mou": 2131324,
+  "tentang": "Kerjasama",
+  "pic": "PLN EPI",
+  "no_telp": "0832343535",
+  "email": "pln@gmail.com",
+  "Keterangan": "Good Night",
+  "file": "Bks.pdf"
+}
+
+//Update Laporan Pks
+###
+PATCH http://localhost:5006/laporanpks
+Content-Type: application/json
+
+{
+  "no_mou": 2131324,
+  "no_pks": 1314234,
+  "tentang": "Kerjasama 2",
+  "mitra": "PLN EPI",
+  "keterangan": "HelloALL",
+  "file": "Bks.pdf"
+}
+
+
+//Delete Laporan Pks
+###
+DELETE http://localhost:5006/laporanpks
